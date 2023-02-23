@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="createquiz.css" />
+    <script type="module" src="createquiz.js" defer></script>
+</head>
+<body>
+<form>
+    <h2>Add an entry to the quiz</h2>
+    <label>Enter Question</label>
+    <br>
+    <input id="question" type="text">
+    <br>
+    <label>Enter Answers</label>
+    <ul>
+        <li>
+            <input id="answer-1" type="radio" name="answers" value="A" class="answers">
+            <input id="1" class="answer" type="text">
+        </li>
+        <li>
+            <input id="answer-2" type="radio" name="answers" value="A" class="answers">
+            <input id="2" class="answer" type="text">
+        </li>
+        <li>
+            <input id="answer-3" type="radio" name="answers" value="A" class="answers">
+            <input id="3" class="answer" type="text">
+        </li>
+        <li>
+            <input id="answer-4" type="radio" name="answers" value="A" class="answers">
+            <input id="4" class="answer" type="text">
+        </li>
+    </ul>
+    <label>Select the Correct Answer</label>
+
+</form>
+<br>
+<button id="add-btn" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add</button>
+<button id="new-btn" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">New entry</button>
+<button onclick="window.location.href='main.html';" id="done-btn" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Done</button>
+
+</body>
+</html>

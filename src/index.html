@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Take quiz</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="loadquizscript.js" defer></script>
+  </head>
+  <body>
+      <p id="question">Question</p>
+
+      <ul class="answer-list">
+        <li>
+          <input id="1" type="radio" name="answers" value="A" class="answers">
+          <label id="quiz-answer-1">AnswerA</label>
+        </li>
+
+        <li>
+          <input id="2" type="radio" name="answers" value="B" class="answers">
+          <label id="quiz-answer-2">AnswerB</label>
+        </li>
+
+        <li>
+          <input id="3" type="radio" name="answers" value="C" class="answers">
+          <label id="quiz-answer-3">AnswerC</label>
+        </li>
+
+        <li>
+          <input id="4" type="radio" name="answers" value="D" class="answers">
+          <label id="quiz-answer-4">AnswerD</label>
+        </li>
+      </ul>
+
+    <button id="submit-btn" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
+    <p id="feedback"></p>
+    <button id="back-btn" hidden onclick="window.location.href='main.html';" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Back to Menu</button>
+  </body>
+</html>
